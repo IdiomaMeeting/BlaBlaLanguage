@@ -16,6 +16,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        repositories {
+            maven { url 'http://ksoap2-android.googlecode.com/svn/m2-repo' }
+        }
     }
 }
 
@@ -29,4 +32,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'com.google.android.gms:play-services:+'
     compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.code.ksoap2-android:ksoap2-android:3.3.0'
 }
